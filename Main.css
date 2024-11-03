@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 html,
@@ -15,8 +15,16 @@ body {
     background-color: #3F4B3B;
 }
 
+.question{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
 .text {
     color: #4ADBC8;
+    margin: 60px;
 }
 
 .range {
@@ -119,4 +127,21 @@ body {
 
 .range .field input::-moz-range-progress{
     background: #5cab7d;
+}
+
+.ans-btn{
+    margin: 60px;
+}
+
+.submit-answer{
+    background-color:white;
+    padding: 15px;
+    border-radius: 20px;
+    color:#4ADBC8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8ea386;
 }

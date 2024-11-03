@@ -10,19 +10,27 @@
 </head>
 
 <body>
-    <div class="text">
-        <h1>from a scale of 1-10 how are you feeling
-        </h1>
+    <div class="question">
+        <div class="text">
+            <h1>How are you feeling on a scale of 1 (happy) to 10 (very sad)?
+            </h1>
+        </div>
+        <div class="range">
+            <div class="sliderValue">
+                <span>10</span>
+            </div>
+            <div class="field">
+                <div class="value left">0</div>
+                <input type="range" min="0" max="10" value="5" step="1">
+                <div class="value right">10</div>
+            </div>
+        </div>
+        <div class="ans-btn">
+            <button type="button" class="submit-answer">Submit Answer</button>
+        </div>
     </div>
-    <div class="range">
-        <div class="sliderValue">
-            <span>10</span>
-        </div>
-        <div class="field">
-            <div class="value left">0</div>
-            <input type="range" min="0" max="10" value="5" steps="1">
-            <div class="value right">10</div>
-        </div>
+    <div class="final-result">
+
     </div>
 </body>
 

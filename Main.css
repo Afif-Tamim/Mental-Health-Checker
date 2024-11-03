@@ -15,7 +15,7 @@ body {
     background-color: #3F4B3B;
 }
 
-.question{
+.question {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -56,7 +56,7 @@ body {
 
 }
 
-.range .sliderValue span.show{
+.range .sliderValue span.show {
     transform: translate(-50%) scale(1);
 }
 
@@ -68,7 +68,7 @@ body {
     background: #5cab7d;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     border: 3px solid #fff;
     z-index: -1;
     border-top-left-radius: 50%;
@@ -122,31 +122,35 @@ body {
     border-radius: 50%;
     border: 1px solid #5cab7d;
     cursor: pointer;
-    
+
 }
 
-.range .field input::-moz-range-progress{
+.range .field input::-moz-range-progress {
     background: #5cab7d;
 }
 
-.ans-btn{
+.ans-btn {
     margin: 60px;
 }
 
-.submit-answer{
-    background-color:white;
+.submit-answer {
+    background-color: white;
     padding: 15px;
     border-radius: 20px;
-    color:#4ADBC8;
+    color: #4ADBC8;
     font-weight: 600;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #8ea386;
+    color: #fff;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+    padding: 16px;
+    border-radius: 20px;
 }
 
-#text-here{
+#text-here {
     font-size: 30px;
     color: #48e5c2;
 }

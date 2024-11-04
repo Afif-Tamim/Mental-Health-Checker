@@ -47,17 +47,24 @@ var breathingText = [
     "Take a moment to breathe deeply: inhale for 4 seconds, hold for 4 seconds, and exhale for 6 seconds. Repeat this a few times to center yourself."
 ]
 
+
+
 const textArea = document.getElementById("text-here");
 
 submit.addEventListener('click', function () {
-    var randomNumber = Math.floor(Math.random() * 10)
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
     let value = inputSlider.value;
     if (value < 4) {
-        textArea.innerHTML = positiveText[randomNumber];
-    } else if (value >= 4 && value < 7) {
-        textArea.innerHTML = motivationalText[randomNumber];
+        textArea.innerHTML = positiveText[randomNumber - 1];
+    } else if (value >= 4 && value <= 6) {
+        textArea.innerHTML = motivationalText[randomNumber - 1];
     } else {
-        textArea.innerHTML = breathingText[0] +  "<br><br>";
-        textArea.innerHTML += motivationalText[randomNumber];
+        textArea.innerHTML = breathingText[0] + "<br><br>";
+        textArea.innerHTML += motivationalText[randomNumber - 1];
     }
 });
+
+function showAnswer() {
+    document.querySelector(".final-result").style.display = 'flex';
+    document.getElementById("answer").scrollIntoView({ behavior: "smooth" });
+}

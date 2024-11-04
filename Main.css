@@ -7,24 +7,27 @@
 
 html,
 body {
-    display: grid;
-    height: 100%;
+    /* display: grid;
     text-align: center;
-    place-items: center;
-    color: #5cab7d;
-    background-color: #3F4B3B;
+    place-items: center; */
+    scroll-behavior: smooth;
 }
 
 .question {
+    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 140px;
+    text-align: center;
+    color: #5cab7d;
+    background-color: #3F4B3B;
 }
 
 .text {
     color: #4ADBC8;
     margin: 60px;
+    /* padding-top: 200px; */
 }
 
 .range {
@@ -153,4 +156,25 @@ button:hover {
 #text-here {
     font-size: 30px;
     color: #48e5c2;
+}
+
+.final-result {
+    background-color: #fff;
+    height: 100vh;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.thnx {
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+
+#text-here {
+    font-size: 1.5em;
+    color: black;
 }

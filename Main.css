@@ -2,14 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 html,
 body {
-    /* display: grid;
-    text-align: center;
-    place-items: center; */
     scroll-behavior: smooth;
 }
 
@@ -20,12 +16,12 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: #5cab7d;
-    background-color: #3F4B3B;
+    color: #112450;
+    background-color: rgb(244, 241, 241);
 }
 
 .text {
-    color: #4ADBC8;
+    color: #112450;
     margin: 60px;
     /* padding-top: 200px; */
 }
@@ -68,7 +64,7 @@ body {
     content: "";
     height: 45px;
     width: 45px;
-    background: #5cab7d;
+    background: #112450;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -92,19 +88,19 @@ body {
     position: absolute;
     font-size: 18px;
     font-weight: 600;
-    color: #5cab7d;
+    color: #112450;
 }
 
 .range .field .value.left {
     left: -22px;
     background-color: #fff;
-    color: #5cab7d;
+    color: #112450;
 }
 
 .range .field .value.right {
     right: -43px;
     background-color: #fff;
-    color: #5cab7d;
+    color: #112450;
 }
 
 .range .field input {
@@ -121,15 +117,15 @@ body {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    background: #5cab7d;
+    background: #112450;
     border-radius: 50%;
-    border: 1px solid #5cab7d;
+    border: 1px solid #112450;
     cursor: pointer;
 
 }
 
 .range .field input::-moz-range-progress {
-    background: #5cab7d;
+    background: #112450;
 }
 
 .ans-btn {
@@ -140,41 +136,60 @@ body {
     background-color: white;
     padding: 15px;
     border-radius: 20px;
-    color: #4ADBC8;
+    font-size: 80%;
+    color: #112450;
     font-weight: 600;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #8ea386;
+    background-color: #112450;
     color: #fff;
     transition: background-color 0.3s, border 0.2s, color 0.2s;
     padding: 16px;
     border-radius: 20px;
 }
 
-#text-here {
-    font-size: 30px;
-    color: #48e5c2;
-}
-
 .final-result {
     background-color: #fff;
     height: 100vh;
     display: none;
-    text-align: center;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    padding: 10px;
 }
 
 .thnx {
-    font-size: 1.5em;
     padding-bottom: 50px;
 }
 
+#mood-type {
+    margin-bottom: 25px;
+    padding-bottom: 5%;
+}
+
+
 #text-here {
-    font-size: 1.5em;
-    color: black;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+#restart {
+    background-color: #fff;
+    margin-left: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 80%;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+#restart:hover {
+    background-color: #112450;
+    color: #fff;
+    cursor: pointer;
+    font-size: 90%;
 }

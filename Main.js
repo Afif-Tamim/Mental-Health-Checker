@@ -7,7 +7,7 @@ inputSlider.addEventListener("input", () => {
     slideValue.textContent = value;
     slideValue.style.left = ((value - inputSlider.min) / (inputSlider.max - inputSlider.min)) * 100 + "%";
     slideValue.classList.add("show");
-    inputSlider.style.background = `linear-gradient(to right, #5cab7d ${((value - inputSlider.min) / (inputSlider.max - inputSlider.min)) * 100}%, #ddd ${((value - inputSlider.min) / (inputSlider.max - inputSlider.min)) * 100}%)`;
+    inputSlider.style.background = `linear-gradient(to right, #112450 ${((value - inputSlider.min) / (inputSlider.max - inputSlider.min)) * 100}%, #ddd ${((value - inputSlider.min) / (inputSlider.max - inputSlider.min)) * 100}%)`;
 });
 
 
@@ -50,21 +50,32 @@ var breathingText = [
 
 
 const textArea = document.getElementById("text-here");
-
+const moodArea = document.getElementById("mood-type");
 submit.addEventListener('click', function () {
     var randomNumber = Math.floor(Math.random() * 10) + 1;
     let value = inputSlider.value;
     if (value < 4) {
+        moodArea.innerHTML = "Looks like your feeling good! </br></br>";
+        moodArea.innerHTML += "Here's a positive quote. ";
         textArea.innerHTML = positiveText[randomNumber - 1];
     } else if (value >= 4 && value <= 6) {
+        moodArea.innerHTML = "Looks like your feeling a bit neutral. </br></br>";
+        moodArea.innerHTML += "Here's a motivational quote.";
         textArea.innerHTML = motivationalText[randomNumber - 1];
     } else {
+        moodArea.innerHTML = "Looks like your feeling pretty sad! </br></br>";
+        moodArea.innerHTML += "Here's a motivational quote and a breathing exercise to help. ";
+
         textArea.innerHTML = breathingText[0] + "<br><br>";
         textArea.innerHTML += motivationalText[randomNumber - 1];
     }
 });
 
 function showAnswer() {
-    document.querySelector(".final-result").style.display = 'flex';
+    document.querySelector(".final-result").style.display = 'block';
     document.getElementById("answer").scrollIntoView({ behavior: "smooth" });
 }
+
+document.getElementById("restart").addEventListener("click", function () {
+    location.reload();
+});

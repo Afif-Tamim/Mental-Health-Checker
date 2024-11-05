@@ -160,9 +160,17 @@ body {
     border-radius: 20px;
 }
 
+svg {
+    display: none;
+}
+
 .final-result {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-color: #fff;
-    height: 100vh;
+    height: 80vh;
     display: none;
     flex-direction: column;
     text-align: center;
@@ -219,5 +227,26 @@ body {
 }
 
 .icon-button:hover {
-    padding: 2px;
+    transform: translateX(-4px);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #112450;
+    font-size: 30px;
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+
+.back-to-top span {
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span {
+    transform: translateY(-4px);
 }

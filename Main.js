@@ -72,6 +72,7 @@ submit.addEventListener('click', function () {
 });
 
 function showAnswer() {
+    document.querySelector("svg").style.display = 'block';
     document.querySelector(".final-result").style.display = 'block';
     document.getElementById("answer").scrollIntoView({ behavior: "smooth" });
 }

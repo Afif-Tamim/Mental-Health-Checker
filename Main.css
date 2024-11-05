@@ -23,7 +23,8 @@ body {
 .text {
     color: #112450;
     margin: 60px;
-    /* padding-top: 200px; */
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .range {
@@ -57,6 +58,8 @@ body {
 
 .range .sliderValue span.show {
     transform: translate(-50%) scale(1);
+    font-size: 20px;
+
 }
 
 .range .sliderValue span::after {
@@ -82,11 +85,12 @@ body {
     justify-content: center;
     height: 100%;
     background: #fff;
+
 }
 
 .range .field .value {
     position: absolute;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 600;
     color: #112450;
 }
@@ -95,6 +99,7 @@ body {
     left: -22px;
     background-color: #fff;
     color: #112450;
+
 }
 
 .range .field .value.right {
@@ -111,6 +116,8 @@ body {
     border-radius: 5px;
     outline: none;
     border: none;
+
+
 }
 
 .range .field input::-webkit-slider-thumb {
@@ -122,6 +129,7 @@ body {
     border: 1px solid #112450;
     cursor: pointer;
 
+
 }
 
 .range .field input::-moz-range-progress {
@@ -130,6 +138,8 @@ body {
 
 .ans-btn {
     margin: 60px;
+    font-size: 20px;
+
 }
 
 .submit-answer {
@@ -142,7 +152,7 @@ body {
     cursor: pointer;
 }
 
-button:hover {
+.submit-answer:hover {
     background-color: #112450;
     color: #fff;
     transition: background-color 0.3s, border 0.2s, color 0.2s;
@@ -192,4 +202,22 @@ button:hover {
     color: #fff;
     cursor: pointer;
     font-size: 90%;
+}
+
+
+.icon-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-circle-left {
+    font-size: 50px;
+    color: #112450;
+}
+
+.icon-button:hover {
+    padding: 2px;
 }

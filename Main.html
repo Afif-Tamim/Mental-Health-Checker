@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Checker</title>
+    <link rel="stylesheet" href="Main.css">
+    <script src="Main.js" defer> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="question">
+        <div class="text">How are you feeling on a scale of 1 (happy) to 10 (very sad)?
+        </div>
+        <div class="range">
+            <div class="sliderValue">
+                <span>10</span>
+            </div>
+            <div class="field">
+                <div class="value left">1</div>
+                <input type="range" min="1" max="10" value="1" step="1">
+                <div class="value right">10</div>
+            </div>
+        </div>
+        <div class="ans-btn">
+            <button type="button" class="submit-answer" onclick="showAnswer()">Submit Answer</button>
+        </div>
+        <a href="index.html">
+            <button class="icon-button"><i class="fa-solid fa-circle-left"></i></button></a>
+    </div>
+    <div class="final-result" id="answer">
+        <div class="thnx">
+            <h1>Thank you for answering!</h1>
+        </div>
+        <div id="mood-type"></div>
+        <div id="text-here"></div>
+        <button id="restart">Restart</button>
+    </div>
+</body>
+
+</html>

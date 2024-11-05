@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(244, 241, 241);
+}
+
+.text {
+    font-size: 60px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    color: #112450;
+}
+
+.button {
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e1c3e;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Times New Roman';
+}
+
+.button:hover{
+    font-size: 32px;
+    width: 452px;
+    height: 82px;
+    background-color: #112450;
+}
